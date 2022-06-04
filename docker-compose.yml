@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: checkout-test
+    build: .
+    container_name: checkout-test-site
+    restart: always
+    ports:
+      - "8080:80"
