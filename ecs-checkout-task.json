@@ -1,5 +1,5 @@
 {
-  "family": "checkout-test-container",
+  "family": "ecs-checkout-task",
   "containerDefinitions": [
     {
       "name": "checkout-test-container",
