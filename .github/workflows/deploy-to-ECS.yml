@@ -38,7 +38,7 @@ env:
   ECS_CLUSTER: ecs-checkout-cluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: ecs-checkout-task # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: checkout-test-site           # set this to the name of the container in the
+  CONTAINER_NAME: checkout-test-container           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 permissions:
@@ -82,7 +82,7 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: ecs-checkout-task.json
+        task-definition: ecs-checkout-task
         container-name: ${{ env.CONTAINER_NAME }}
         image: ${{ steps.build-image.outputs.image }}
 
