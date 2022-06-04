@@ -2,14 +2,14 @@
   "family": "checkout-test-container",
   "containerDefinitions": [
     {
-      "name": "web",
+      "name": "checkout-test-container",
       "image": "557707468855.dkr.ecr.us-east-1.amazonaws.com/checkout-test-repo",
       "cpu": 512,
       "memoryReservation": 1024,
       "entryPoint": ["/"],
       "portMappings": [
         {
-          "containerPort": 80,
+          "containerPort": 8080,
           "hostPort": 80,
           "protocol": "tcp"
         }
