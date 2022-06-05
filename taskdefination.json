@@ -4,6 +4,7 @@
 	"requiresCompatibilities": [
 		"FARGATE"
 	],
+	"executionRoleArn": "arn:aws:iam::557707468855:role/ecsTaskExecution"
 	"cpu": "512",
 	"memory": "1024",
 	"containerDefinitions": [{
