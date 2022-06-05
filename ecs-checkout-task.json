@@ -4,8 +4,8 @@
     {
       "name": "checkout-test-container",
       "image": "557707468855.dkr.ecr.us-east-1.amazonaws.com/checkout-test-repo",
-      "cpu": 512,
-      "memoryReservation": 1024,
+      "cpu": 1024,
+      "memoryReservation": 4096,
       "entryPoint": ["/"],
       "portMappings": [
         {
