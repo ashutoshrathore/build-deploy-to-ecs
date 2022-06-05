@@ -1,4 +1,11 @@
 {
+    "family": "ecscheckouttask",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "512",
+    "memory": "1024",
     "containerDefinitions": [
         {
             "name": "checkout-test-container",
@@ -27,11 +34,5 @@
             "ulimits": [],
             "systemControls": []
         }
-    "family": "ecscheckouttask",
-    "networkMode": "awsvpc",
-    "requiresCompatibilities": [
-        "FARGATE"
     ],
-    "cpu": "512",
-    "memory": "1024",
 }
